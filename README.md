@@ -41,6 +41,7 @@ Notes
 The last version is 1.5 beta (I didn't built any alpha version yet).
 
 Sometimes, the encodage made me crazy.
-This version has been coded on Windows 7 and you might use QString::fromAscii("msg") for each sentence which contains non-english characters (i.e : accents).
+This version has been coded on Windows 7 and you might use ``QString::fromAscii("msg")``
+for each sentence which contains non-english characters (i.e : accents) if you have some mistakes.
 
 The original language is french and have been translated in english. Language selection in Options doesn't work yet.
