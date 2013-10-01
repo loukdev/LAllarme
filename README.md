@@ -10,22 +10,22 @@ Presentation
 ============
 
 This application is an alarm :
- > Choose the time and start the timer, you will be warned when the time will be up.
- > The title is updated to display the remaining time, allow you to minimize the window.
- > Pause/resume it.
+ - Choose the time and start the timer, you will be warned when the time will be up.
+ - The title is updated to display the remaining time, allow you to minimize the window.
+ - Pause/resume it.
 
 It's a stopwatch too :
- > Click on Start button.
- > Adding a note will add the current time to the text edit.
- > Pause/resume it.
+ - Click on Start button.
+ - Adding a note will add the current time to the text edit.
+ - Pause/resume it.
 
 And a useless clock :D :
- > "Tools" --> "Hour..."
+ * "Tools" --> "Hour..."
 
 I don't think I need help for development. But if you have any (good ?) ideas, contact me : ds.la.lun@gmail.com.
 
-Compile and use it
-==================
+Compilation
+===========
 
 You might have Qt SDK installed - I personnally use the 4.8.4 version.
 Then, just open LAllarme.pro with Qt Creator and build !
