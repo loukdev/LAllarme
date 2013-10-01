@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LAllarme</class>
+ <widget class="QMainWindow" name="LAllarme">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>354</width>
+    <height>195</height>
+   </rect>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/LAllarme.png</normaloff>images/LAllarme.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string>LAllarme : compte à rebours, chronomètre et plus...</string>
+  </property>
+  <property name="whatsThis">
+   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pour avoir plus d'infos sur LAllarme, aller dans Aide -&amp;gt; A propos...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="Bar_Menu">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>354</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="Menu_File">
+    <property name="toolTip">
+     <string>Menu &quot;Fichier&quot;</string>
+    </property>
+    <property name="whatsThis">
+     <string>Accède au menu &quot;Fichier&quot;.</string>
+    </property>
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="Action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="Menu_Tools">
+    <property name="toolTip">
+     <string>Menu &quot;Outils&quot;</string>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+    <property name="title">
+     <string>Outils</string>
+    </property>
+    <widget class="QMenu" name="Menu_Mode">
+     <property name="title">
+      <string>Mode</string>
+     </property>
+     <addaction name="Action_Alarm"/>
+     <addaction name="Action_Chrono"/>
+    </widget>
+    <addaction name="Action_ChangeFont"/>
+    <addaction name="Action_ChangeFontColor"/>
+    <addaction name="separator"/>
+    <addaction name="Menu_Mode"/>
+    <addaction name="separator"/>
+    <addaction name="Action_Clock"/>
+    <addaction name="separator"/>
+    <addaction name="Action_Options"/>
+   </widget>
+   <widget class="QMenu" name="Menu_Help">
+    <property name="toolTip">
+     <string>Menu &quot;Aide&quot;</string>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="Action_Help"/>
+    <addaction name="Action_AboutLAllarme"/>
+    <addaction name="Action_AboutQt"/>
+   </widget>
+   <addaction name="Menu_File"/>
+   <addaction name="Menu_Tools"/>
+   <addaction name="Menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="Bar_Status">
+   <property name="toolTip">
+    <string>Affiche des infos temporaires et générales</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Barre de statut : elle affiche temporairement les actions effectuées et des infos en général.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <action name="Action_Quit">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+   <property name="toolTip">
+    <string>Quitte l'application</string>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="Action_Options">
+   <property name="text">
+    <string>Options...</string>
+   </property>
+   <property name="toolTip">
+    <string>Accède aux options</string>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Shift+O</string>
+   </property>
+  </action>
+  <action name="Action_Help">
+   <property name="text">
+    <string>Aide</string>
+   </property>
+   <property name="toolTip">
+    <string>Affiche l'aide</string>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Shift+H</string>
+   </property>
+  </action>
+  <action name="Action_AboutQt">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>A propos de Qt...</string>
+   </property>
+   <property name="toolTip">
+    <string>Affiche des infos sur Qt</string>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Shift+Q</string>
+   </property>
+  </action>
+  <action name="Action_AboutLAllarme">
+   <property name="text">
+    <string>A propos...</string>
+   </property>
+   <property name="toolTip">
+    <string>A propos de LAllarme</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+L</string>
+   </property>
+  </action>
+  <action name="Action_ChangeFont">
+   <property name="text">
+    <string>Changer la police...</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+F</string>
+   </property>
+  </action>
+  <action name="Action_ChangeFontColor">
+   <property name="text">
+    <string>Changer la couleur de police...*</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+C</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="Action_Chrono">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Chronomètre</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+  </action>
+  <action name="Action_Alarm">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Compte à rebours</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+A</string>
+   </property>
+  </action>
+  <action name="Action_Clock">
+   <property name="text">
+    <string>Heure...</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+H</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

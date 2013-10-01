@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LAllarmeOptions</class>
+ <widget class="QDialog" name="LAllarmeOptions">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>357</width>
+    <height>234</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Options</string>
+  </property>
+  <layout class="QVBoxLayout" name="VLay_Main">
+   <item>
+    <widget class="QTabWidget" name="TabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="Tab_App">
+      <attribute name="title">
+       <string>Général</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="VLay_AppTab">
+       <item>
+        <layout class="QHBoxLayout" name="HLay_Language">
+         <item>
+          <widget class="QLabel" name="Lbl_Language">
+           <property name="text">
+            <string>Choix de la langue :</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="CmbBox_Language">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>Brezhoneg</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>English</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Français</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="CkBox_DisplayHour">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Heure toujours au premier plan</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="VSpr_App">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="Tab_Alarm">
+      <attribute name="title">
+       <string>Alarme</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="VLay_AlarmTab">
+       <item>
+        <widget class="QCheckBox" name="CkBox_Alarm_Ring">
+         <property name="text">
+          <string>Activer l'alarme</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="GpBox_EndOfTime">
+         <property name="title">
+          <string>Lorsque le temps est écoulé :</string>
+         </property>
+         <layout class="QFormLayout" name="FormLay_EndOfTime">
+          <property name="fieldGrowthPolicy">
+           <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+          </property>
+          <item row="1" column="0">
+           <widget class="QLabel" name="Lbl_MsgToDisp">
+            <property name="text">
+             <string>Afficher le message :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="LnEdit_MsgToDisp">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="Lbl_CmdToExe">
+            <property name="text">
+             <string>Exécuter la commande :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="LnEdit_CmdToExe"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="Tab_Chrono">
+      <attribute name="title">
+       <string>Chronomètre</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="VLay_ChronoTab">
+       <item>
+        <widget class="QCheckBox" name="CkBox_Chrono_DisplayNotes">
+         <property name="text">
+          <string>Afficher le système de note</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="CkBox_ClearNotes">
+         <property name="text">
+          <string>Effacer les notes à l'arrêt</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="VSpr_Chrono">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="BtnBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

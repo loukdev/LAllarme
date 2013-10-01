@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AboutLAllarme</class>
+ <widget class="QDialog" name="AboutLAllarme">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>856</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>A propos de LAllarme</string>
+  </property>
+  <layout class="QVBoxLayout" name="VLay_Main">
+   <item>
+    <widget class="QLabel" name="Lbl_Presentation">
+     <property name="text">
+      <string>
+LAllarme est entièrement codée par moi (Louka FRABOULET). J'utilise le langage C++ et la performante bibliothèque Qt (Aide -&gt; A propos de Qt).
+C'est une petite application de compte à rebours qui s'améliore petit à petit, placée sous licence libre.</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="Lbl_Version">
+     <property name="text">
+      <string>
+La version que vous possédez est la 1.5-Beta (win)
+Elle est actuellement sous licence BSD.
+</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="GpBox_NameOrigins">
+     <property name="title">
+      <string>Origines du nom :</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" name="VLay_NameOrigins">
+      <item>
+       <widget class="QPlainTextEdit" name="TxtEdit_NameOrigins">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="plainText">
+         <string>Le nom de LAllarme vient du mot alarme précédé d'un 'L', première lettre du prénom Louka, créant un petit jeu de mot : l'alarme.
+
+Pourquoi deux 'l' à LAllarme ? Une faute d'orthographe ?
+Mais non, la preuve : il est toujours écrit avec deux 'l'.
+
+Les deux 'l' de LAllarme viennent du prénom 'Lalla', personnage éponyme d'un texte étudié en français lors de ma classe de 1ere S.
+Après de nombreuses interventions sur ce prénom et sur l'histoire de Lalla, il est resté parmi quelques-uns de ma classe. D'ailleurs, l'un de mes anciens collègues de 1ere (avec qui je suis toujours lié, ptite dédicace en passant) l'a pris pour surnom.
+
+Voilà, vous savez tout.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="GpBox_NextImprovs">
+     <property name="title">
+      <string>Prochaines améliorations :</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" name="VLay_NextImprovs">
+      <item>
+       <widget class="QPlainTextEdit" name="TxtEdit_NextImprovs">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="plainText">
+         <string>1.6 :
+- Traduction en breton
+- Choix de la langue au lancement
+
+1.7 :
+- Possibilité d'enregistrer les notes (dans un fichier texte) et de les réouvrir
+- Ajout des options :
+  &gt; Choix de la langue
+  &gt; Affichage de la barre de menu (cochable)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="BtnBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Ok</set>
+     </property>
+     <property name="centerButtons">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>BtnBox</sender>
+   <signal>accepted()</signal>
+   <receiver>AboutLAllarme</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnBox</sender>
+   <signal>rejected()</signal>
+   <receiver>AboutLAllarme</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
