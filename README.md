@@ -29,7 +29,7 @@ Compilation
 
 You might have Qt SDK installed - I personnally use the 4.8.4 version.
 Then, just open LAllarme.pro with Qt Creator and build !
-It needs :
+It needs those dynamic libraries :
  - libgcc_s_dw2-1.dll
  - mingwm10.dll
  - release : QtCore4.dll | debug : QtCored4.dll
