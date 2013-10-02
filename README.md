@@ -28,7 +28,7 @@ Compilation
 ===========
 
 You might have Qt SDK installed - I personnally use the 4.8.4 version.
-Then, just open LAllarme.pro with Qt Creator and build !
+Then, just open LAllarme.pro with Qt Creator and build !<br />
 It needs those dynamic libraries :
  - libgcc_s_dw2-1.dll
  - mingwm10.dll
