@@ -12,9 +12,10 @@
 #  endif
 
 #  define lversion	"1-5"
-#  define lv_comp_s		"Beta"
-#  define LVERSION		(QString("LAllarme ") + lversion + " " + lv_comp_s + " " + los_p_s).toStdString().c_str()
-#  define LAPP_VERSION	(QString(lversion) + "-" + lv_comp_s + "-" + los_p_s).toStdString().c_str()
+#  define lv_comp_s	"Beta"
+
+char LVERSION[256]		= (QString("LAllarme ") + lversion + " " + lv_comp_s + " " + los_p_s).toStdString().c_str()
+char LAPP_VERSION[256]	= (QString(lversion) + "-" + lv_comp_s + "-" + los_p_s).toStdString().c_str()
 
 #  include <QColor>
 #  include <QFont>
