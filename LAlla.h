@@ -2,6 +2,7 @@
 #  define LALLA_H
 
 #  include <QString>
+#  include <string>
 
 #  ifdef unix
 #    define los_p_s	"(deb)"
@@ -14,8 +15,11 @@
 #  define lversion	"1-5"
 #  define lv_comp_s	"Beta"
 
-char LVERSION[256] = (QString("LAllarme ") + lversion + " " + lv_comp_s + " " + los_p_s).toStdString().c_str()
-char LAPP_VERSION[256] = (QString(lversion) + "-" + lv_comp_s + "-" + los_p_s).toStdString().c_str()
+const std::string _LVERSION = (std::string("LAllarme ") + lversion + " " + lv_comp_s + " " + los_p_s)
+const std::string _LAPP_VERSION = (std::string(lversion) + "-" + lv_comp_s + "-" + los_p_s)
+
+#  define LVERSION	_LVERSION.c_str()
+#  define LAPP_VERSION	_LAPP_VERSION.c_str()
 
 #  include <QColor>
 #  include <QFont>
