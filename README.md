@@ -27,7 +27,7 @@ I don't think I need help for development. But if you have any (good ?) ideas, c
 Compilation
 ===========
 
-You must have Qt SDK installed - I personnally use the 4.8.4 version.<br/>
+You must have Qt SDK installed - I use the 4.8.4 version.<br/>
 Then, just open LAllarme.pro with Qt Creator and build !<br />
 It needs those dynamic libraries to be executed :
  - libgcc_s_dw2-1.dll
