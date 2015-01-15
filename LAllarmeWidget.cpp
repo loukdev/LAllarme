@@ -41,6 +41,7 @@ void LAllarmeWidget::setup()
 {
 	LTimerWidget::setup();
 
+	TimeEdit->setDisplayFormat("hh:mm:ss");
 	TimeEdit->setAccelerated(true);
 }
 

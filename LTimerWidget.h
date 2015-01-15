@@ -31,7 +31,7 @@ class LTimerWidget : public QGroupBox
 		void next();
 		// Called every second.
 		void setPause(LAlla::PseBtnState state = LAlla::None);
-		// If btnState is given : if already paused, resume the timer, else set the timer paused.
+		// If btnState is given : if already paused, resume the timer, else pause the timer.
 
 		virtual void setVisible(bool visible);
 
