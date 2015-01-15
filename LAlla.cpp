@@ -1,7 +1,7 @@
 #include "LAlla.h"
 #include <QObject>
 
-#define tr(s)	(QObject::tr(QString::fromAscii(s).toStdString().c_str()))
+#define tr(s)	(QObject::tr(QString::fromLatin1(s).toStdString().c_str()))
 
 namespace LAlla {
 	int toms(int ms, int s, int mn, int hr)  { return ms + s*1000 + mn*60000 + hr*3600000; }

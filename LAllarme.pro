@@ -1,28 +1,40 @@
-HEADERS += \
-    AboutLAllarme.h \
-    LAllarme.h \
-    LAllarmeOptions.h \
-    LAllarmeWidget.h \
-    LChronoWidget.h \
-    LTimerWidget.h \
-    LAlla.h \
-    LOptionsFile.h
+#-------------------------------------------------
+#
+# Project created by QtCreator 2015-01-15T21:41:34
+#
+#-------------------------------------------------
+
+QT       += core gui
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+TARGET = LAllarme
+TEMPLATE = app
+
 
 SOURCES += \
-    main.cpp \
     AboutLAllarme.cpp \
+    LAlla.cpp \
     LAllarme.cpp \
     LAllarmeOptions.cpp \
     LAllarmeWidget.cpp \
     LChronoWidget.cpp \
     LTimerWidget.cpp \
-    LAlla.cpp \
-    LOptionsFile.cpp
+    main.cpp
 
-FORMS += \
-    lallarme.ui \
+HEADERS  += \
+    AboutLAllarme.h \
+    LAlla.h \
+    LAllarme.h \
+    LAllarmeOptions.h \
+    LAllarmeWidget.h \
+    LChronoWidget.h \
+    LTimerWidget.h
+
+FORMS    += \
     lallarme_options.ui \
-	about_lallarme.ui \
+    lallarme.ui \
+    about_lallarme.ui
 
-TRANSLATIONS = \
-	lallarme_en.ts
+DISTFILES += \
+    lallarme_en.ts

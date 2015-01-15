@@ -28,7 +28,7 @@
 
 #include "LAllarmeOptions.h"
 
-#define tr(s)	tr(QString::fromAscii(s).toStdString().c_str())
+#define tr(s)	tr(QString::fromLatin1(s).toStdString().c_str())
 
 LAllarmeOptions::LAllarmeOptions(LAlla::rmeData &data, QWidget *parent)
 				: QDialog(parent), m_data(data)

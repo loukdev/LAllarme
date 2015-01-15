@@ -28,7 +28,7 @@
 
 #include "LChronoWidget.h"
 
-#define tr(s)	tr(QString::fromAscii(s).toStdString().c_str())
+#define tr(s)	tr(QString::fromLatin1(s).toStdString().c_str())
 
 LChronoWidget::LChronoWidget(const QString &title, QWidget *parent)
 	: LTimerWidget(10, title, parent), LnEdt_NoteSuffix(new QLineEdit(this)), PshBtn_AddNote(new QPushButton(tr("Noter"), this)),

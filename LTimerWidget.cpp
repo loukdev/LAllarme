@@ -54,6 +54,8 @@ LTimerWidget::LTimerWidget(const int &interval, const QString &title, QWidget *p
 
 	Button_Pause->setEnabled(false);
 	Button_Stop->setEnabled(false);
+
+	this->TimeEdit->setDisplayFormat("hh:mm:ss");
 }
 
 void LTimerWidget::start(QTime time)

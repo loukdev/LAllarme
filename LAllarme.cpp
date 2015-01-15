@@ -33,7 +33,7 @@
 #include "LAllarmeWidget.h"
 #include "LChronoWidget.h"
 
-#define tr(s)	tr(QString::fromAscii(s).toStdString().c_str())
+#define tr(s)	tr(QString::fromLatin1(s).toStdString().c_str())
 
 LAllarme::LAllarme(QWidget *parent)
 	: QMainWindow(parent), AlarmWidget(new LAllarmeWidget(tr("Alarme"), this)),
@@ -94,7 +94,7 @@ void LAllarme::adjustSize()
 	}
 	else if(m_mode == LAlla::Chrono)
 	{
-		if(ChronoWidget->isHiddenNotes())		// If notes are hidden, it takes less space.
+		if(ChronoWidget->isHiddenNotes())		// It takes less space if notes are hidden.
 		{
 			this->setMinimumSize(250, 176);
 			this->resize(this->minimumSize());
@@ -125,7 +125,8 @@ void LAllarme::setLanguage(const LAlla::Language &language)
 			break;
 	}
 	//if(!trans.isEmpty())
-	trans->load("lallarme_en");
+	//trans->load("lallarme_en");
+	this->close();
 	qApp->installTranslator(trans);
 }
 

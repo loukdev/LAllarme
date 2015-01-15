@@ -15,8 +15,8 @@
 #  define lversion	"1-5"
 #  define lv_comp_s	"Beta"
 
-const std::string _LVERSION = (std::string("LAllarme ") + lversion + " " + lv_comp_s + " " + los_p_s)
-const std::string _LAPP_VERSION = (std::string(lversion) + "-" + lv_comp_s + "-" + los_p_s)
+const std::string _LVERSION = (std::string("LAllarme ") + lversion + " " + lv_comp_s + " " + los_p_s);
+const std::string _LAPP_VERSION = (std::string(lversion) + "-" + lv_comp_s + "-" + los_p_s);
 
 #  define LVERSION	_LVERSION.c_str()
 #  define LAPP_VERSION	_LAPP_VERSION.c_str()
@@ -34,10 +34,9 @@ namespace LAlla {
 	// Convert a QTime in milliseconds.
 	QTime toQTime(int ms, int s = 0, int mn = 0, int hr = 0);
 	/* Convert time to a QTime object.
-	 * Simplifly milliseconds, seconds and minutes. At the end, ms < 1000 ; s < 60 ; mn < 60
+	 * Simplifly milliseconds, seconds and minutes. Asserts that ms < 1000, s < 60 and mn < 60.
 	 */
 
-	// Enum used to know in which mode LAllarme is.
 	enum Mode { Alarm, Chrono };
 	enum Language {
 		Britton = 0,
@@ -54,7 +53,7 @@ namespace LAlla {
 	};
 
 	struct AlarmData {
-			AlarmData(const QString& messageToDisplay = QString::fromAscii("L'alarme a sonné !"), const QString& commandToExecute = "", const bool& ringWhenTimesUp = true);
+			AlarmData(const QString& messageToDisplay = QString::fromLatin1("L'alarme a sonné !"), const QString& commandToExecute = "", const bool& ringWhenTimesUp = true);
 
 		QString		m_msg,
 					m_cmd;
@@ -68,7 +67,7 @@ namespace LAlla {
 					m_clrNotes;
 	};
 
-	// Struct used to save changes in the options and to have an easier communication between the main window and the option window.
+	// Class used to save changes in the options and to communicate between the main window and the option window.
 	struct rmeData {
 		rmeData(AppData& appData, AlarmData& alarmData = (*new AlarmData), ChronoData& chronoData = *(new ChronoData))
 			: m_app(appData), m_alarm(alarmData), m_chrono(chronoData)

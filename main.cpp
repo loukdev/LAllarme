@@ -71,8 +71,8 @@ int main(int argc, char **argv)
 
 	//QMessageBox::information(0, "WOUF !", VERSION);
 
-	LAllarme IDontKnowWhichNameToGiveAtThisObjectAndNowItHasOne;	// Because I'm completely mad
-    IDontKnowWhichNameToGiveAtThisObjectAndNowItHasOne.show();
+	LAllarme IDontKnowHowNameThisObjectAndNowItHasOne;	// Because I'm completely mad
+	IDontKnowHowNameThisObjectAndNowItHasOne.show();
 
 	return app.exec();
 }
