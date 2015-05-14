@@ -45,6 +45,6 @@ This version has been coded on Windows 7 (I hadn't my Linux computer with me) an
 on each sentence containing non-english characters (like accents) if you have some mistakes.
 
 The original language is french and I (badly) translated it in english.<br/>
-And as you can see, I haven't got a nice english and it would be great if someone could improve english translations.
+As you can see, I haven't got a really good english. Therefore, it would be great if someone is ok to improve english translations.
 
 Language selection in Options doesn't work yet (I don't master translations with Qt for the moment).
