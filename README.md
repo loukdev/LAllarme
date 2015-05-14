@@ -38,7 +38,7 @@ It needs those dynamic libraries to be executed :
 Notes
 =====
 
-The last version is 1.5 beta (no alpha version built yet).
+The last version is 1.5 beta.
 
 Sometimes, the encodage made me crazy.<br/>
 This version has been coded on Windows 7 (I hadn't my Linux computer with me) and you should use ``QString::fromAscii()`` or ``QString::fromUtf8()``
