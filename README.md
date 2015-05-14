@@ -4,7 +4,7 @@ LAllarme
 This is an alarm/stopwatch easy-to-use software.<br/>
 I develop it in C++ with Qt Library when I have free time.
 
-You can download the project and compile it yourself and then use it, but binaries are not ready yet.
+To use it, you can download the project and compile it yourself.
 
 Presentation
 ============
