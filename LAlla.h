@@ -37,7 +37,6 @@ namespace LAlla {
 	 * Simplifly milliseconds, seconds and minutes. At the end, ms < 1000 ; s < 60 ; mn < 60
 	 */
 
-	// Enum used to know in which mode LAllarme is.
 	enum Mode { Alarm, Chrono };
 	enum Language {
 		Britton = 0,
@@ -54,7 +53,7 @@ namespace LAlla {
 	};
 
 	struct AlarmData {
-			AlarmData(const QString& messageToDisplay = QString::fromAscii("L'alarme a sonné !"), const QString& commandToExecute = "", const bool& ringWhenTimesUp = true);
+			AlarmData(const QString& messageToDisplay = QString::fromAscii("L'alarme a sonnÃ© !"), const QString& commandToExecute = "", const bool& ringWhenTimesUp = true);
 
 		QString		m_msg,
 					m_cmd;
@@ -68,7 +67,7 @@ namespace LAlla {
 					m_clrNotes;
 	};
 
-	// Struct used to save changes in the options and to have an easier communication between the main window and the option window.
+	// Structure used to communicate between the main window and the option window.
 	struct rmeData {
 		rmeData(AppData& appData, AlarmData& alarmData = (*new AlarmData), ChronoData& chronoData = *(new ChronoData))
 			: m_app(appData), m_alarm(alarmData), m_chrono(chronoData)
