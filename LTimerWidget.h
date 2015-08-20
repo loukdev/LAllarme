@@ -29,9 +29,9 @@ class LTimerWidget : public QGroupBox
 		void stop();
 		// Called when the time's up.
 		void next();
-		// Called every second.
+		// Called every tick (default : 1 tick = 1 second).
 		void setPause(LAlla::PseBtnState state = LAlla::None);
-		// If btnState is given : if already paused, resume the timer, else set the timer paused.
+		// If state is Lalla::Continue or Lalla::Pause, set the pause button to respectively resume and pause. Else, the pause button is switched.
 
 		virtual void setVisible(bool visible);
 
