@@ -49,7 +49,7 @@ class LAllarme : public QMainWindow, public Ui::LAllarme
 		void setLanguage(const LAlla::Language& language);
 		void setMode(const LAlla::Mode& mode);	// Called when mode has changed.
 
-		void aboutLAllarme();					// Open a window (defined in "about_lallarme.h") about LAllarme application.
+		void aboutLAllarme();					// Open a window (defined in "AboutLallarme.h") about LAllarme application.
 
 	// Auto-called slots
 		//void on_Action_ChangeFontColor_triggered();
