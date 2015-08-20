@@ -37,8 +37,8 @@
 
 LAllarme::LAllarme(QWidget *parent)
 	: QMainWindow(parent), AlarmWidget(new LAllarmeWidget(tr("Alarme"), this)),
-	  ChronoWidget(new LChronoWidget(tr("ChronomËtre"), this)), Lbl_PermanentTime(new QLabel("00:10:00", this)),
-	  data(*new LAlla::AppData(this->font()), *new LAlla::AlarmData(tr("L'alarme a sonnÈ !"))), m_mode(LAlla::Alarm)
+	  ChronoWidget(new LChronoWidget(tr("Chronom√®tre"), this)), Lbl_PermanentTime(new QLabel("00:10:00", this)),
+	  data(*new LAlla::AppData(this->font()), *new LAlla::AlarmData(tr("L'alarme a sonn√© !"))), m_mode(LAlla::Alarm)
 {
 	this->setupUi(this);
 	this->setWindowTitle(LVERSION);
@@ -124,8 +124,8 @@ void LAllarme::setLanguage(const LAlla::Language &language)
 		default :
 			break;
 	}
-	//if(!trans.isEmpty())
-	trans->load("lallarme_en");
+	if(!trans.isEmpty())
+		trans->load("lallarme_en");
 	qApp->installTranslator(trans);
 }
 
@@ -183,9 +183,10 @@ void LAllarme::aboutLAllarme()
 
 void LAllarme::on_Action_ChangeFont_triggered()
 {
-    bool ok;
+	bool ok;
 	QFont font = QFontDialog::getFont(&ok, data.m_app.m_font, this, tr("Changer la police"));
-    if(ok)
+
+	if(ok)
 	{
 		data.m_app.m_font = font;
 		this->setFont(data.m_app.m_font);
@@ -277,9 +278,9 @@ void LAllarme::timeStopped(QTime time)
 	this->setWindowTitle(LVERSION);
 
 	if(m_mode == LAlla::Alarm && LAlla::toms(time) >= 1000)
-		this->statusBar()->showMessage(tr("Alarme stoppÈe"), MSG_TIMEOUT);
+		this->statusBar()->showMessage(tr("Alarme stopp√©e"), MSG_TIMEOUT);
 	else
-		this->statusBar()->showMessage(tr("ChronomËtre stoppÈ"), MSG_TIMEOUT);
+		this->statusBar()->showMessage(tr("Chronom√®tre stopp√©"), MSG_TIMEOUT);
 }
 
 void LAllarme::timeSUp()
@@ -292,8 +293,8 @@ void LAllarme::timeSUp()
 	{
 		QString s = data.m_alarm.m_msg;
 		if(!data.m_alarm.m_cmd.isEmpty())
-			s += tr("\nExÈcution de la commande : ") + data.m_alarm.m_cmd;
-		QMessageBox::warning(this, tr("Temps ÈcoulÈ"), s);
+			s += tr("\nEx√©cution de la commande : ") + data.m_alarm.m_cmd;
+		QMessageBox::warning(this, tr("Temps √©coul√©"), s);
 	}
 	if(!data.m_alarm.m_cmd.isEmpty())
 		system(data.m_alarm.m_cmd.toStdString().c_str());
