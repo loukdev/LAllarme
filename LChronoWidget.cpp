@@ -68,7 +68,7 @@ void LChronoWidget::hideNotes(const bool &hide)
 
 void LChronoWidget::next()
 {
-	if(TxtEdt_Notes->toPlainText().isEmpty())
+	if(m_noteNb != 0 && TxtEdt_Notes->toPlainText().isEmpty())
 		m_noteNb = 0;
 	LTimerWidget::next();
 }
