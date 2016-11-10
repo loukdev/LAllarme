@@ -23,10 +23,6 @@ class LAllarmeWidget : public LTimerWidget
 	signals :
 
 		void timeSUp();
-
-	protected :
-
-		void setup();
 };
 
 #endif // LALLARMEWIDGET_H
