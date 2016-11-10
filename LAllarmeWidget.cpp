@@ -37,13 +37,6 @@ LAllarmeWidget::LAllarmeWidget(const QString &title, QWidget *parent)
 	this->setConnections();
 }
 
-void LAllarmeWidget::setup()
-{
-	LTimerWidget::setup();
-
-	TimeEdit->setAccelerated(true);
-}
-
 void LAllarmeWidget::next()
 {
 	if(LAlla::toms(TimeEdit->time()) >= 1000)
