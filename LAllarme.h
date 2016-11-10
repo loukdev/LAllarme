@@ -44,7 +44,7 @@ class LAllarme : public QMainWindow, public Ui::LAllarme
 
         //void setPalette(const QPalette & palette);
 
-		void adjustSize();						// Adjust size in function of the mode and the visibility of widgets.
+		void adjustSize();						// Adjust size considering the alarm mode and the visible widgets.
 
 		void setLanguage(const LAlla::Language& language);
 		void setMode(const LAlla::Mode& mode);
