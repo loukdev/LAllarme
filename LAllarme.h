@@ -47,19 +47,19 @@ class LAllarme : public QMainWindow, public Ui::LAllarme
 		void adjustSize();						// Adjust size in function of the mode and the visibility of widgets.
 
 		void setLanguage(const LAlla::Language& language);
-		void setMode(const LAlla::Mode& mode);	// Called when mode has changed.
+		void setMode(const LAlla::Mode& mode);
 
 		void aboutLAllarme();					// Open a window (defined in "AboutLallarme.h") about LAllarme application.
 
 	// Auto-called slots
 		//void on_Action_ChangeFontColor_triggered();
 		void on_Action_ChangeFont_triggered();
-        void on_Action_Help_triggered();
+		void on_Action_Help_triggered();
 		void on_Action_Options_triggered();
 		void on_Action_Quit_triggered();
 
-        void on_Action_Alarm_triggered();
-        void on_Action_Chrono_triggered();
+		void on_Action_Alarm_triggered();
+		void on_Action_Chrono_triggered();
 		void on_Action_Clock_triggered();
 
 	// Time slots
