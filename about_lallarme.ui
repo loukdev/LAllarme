@@ -18,8 +18,8 @@
     <widget class="QLabel" name="Lbl_Presentation">
      <property name="text">
       <string>
-LAllarme est entièrement codée par moi (Louka FRABOULET). J'utilise le langage C++ et la performante bibliothèque Qt (Aide -&gt; A propos de Qt).
-C'est une petite application de compte à rebours qui s'améliore petit à petit, placée sous licence libre.</string>
+LAllarme est entièrement codée par moi (Elody FRABOULET). J'utilise le langage C++ et la bibliothèque Qt (Aide -&gt; A propos de Qt).
+C'est une petite application de compte à rebours que j'améliore pendant mes heures perdues, placée sous licence libre.</string>
      </property>
     </widget>
    </item>
@@ -51,13 +51,13 @@ Elle est actuellement sous licence BSD.
          </size>
         </property>
         <property name="plainText">
-         <string>Le nom de LAllarme vient du mot alarme précédé d'un 'L', première lettre du prénom Louka, créant un petit jeu de mot : l'alarme.
+         <string>Le nom de LAllarme vient du mot alarme précédé d'un 'L', première lettre de mon ancien prénom, créant un petit jeu de mot : l'alarme.
 
 Pourquoi deux 'l' à LAllarme ? Une faute d'orthographe ?
-Mais non, la preuve : il est toujours écrit avec deux 'l'.
+Ben non ! La preuve : il est toujours écrit avec deux 'l'.
 
 Les deux 'l' de LAllarme viennent du prénom 'Lalla', personnage éponyme d'un texte étudié en français lors de ma classe de 1ere S.
-Après de nombreuses interventions sur ce prénom et sur l'histoire de Lalla, il est resté parmi quelques-uns de ma classe. D'ailleurs, l'un de mes anciens collègues de 1ere (avec qui je suis toujours lié, ptite dédicace en passant) l'a pris pour surnom.
+Après de nombreuses interventions sur ce prénom et sur l'histoire de Lalla, il est resté parmi quelques-uns de ma classe. D'ailleurs, l'une de mes anciennes collègues de 1ere (avec qui je suis toujours en contact, ptite dédicace en passant) l'utilisait comme surnom.
 
 Voilà, vous savez tout.</string>
         </property>
